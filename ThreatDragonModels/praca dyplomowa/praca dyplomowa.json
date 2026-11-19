@@ -77,6 +77,69 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "6b4ef2d1-5073-41e5-b68f-3b98b64e6fcc",
+            "source": {
+              "x": 1310,
+              "y": 40
+            },
+            "target": {
+              "x": 1310,
+              "y": 580
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
             "position": {
               "x": 250,
               "y": 110
@@ -429,16 +492,16 @@
           },
           {
             "position": {
-              "x": 963,
-              "y": 19.99999999999997
+              "x": 970,
+              "y": 20
             },
             "size": {
-              "width": 120,
+              "width": 150,
               "height": 110
             },
             "attrs": {
               "text": {
-                "text": "APD baza danych"
+                "text": "APD baza danych frontend"
               },
               "body": {
                 "stroke": "#333333",
@@ -534,7 +597,7 @@
             "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "APD baza danych",
+              "name": "APD baza danych frontend",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -751,99 +814,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "analiza",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "analiza"
-            ],
-            "id": "226d0b0d-5bae-4d09-92a5-c0f4b2f7c65e",
-            "source": {
-              "cell": "7ef99cfc-f1aa-4f17-82e1-9a88af418194",
-              "port": "47574177-ddc7-47af-ac3f-f28637634415"
-            },
-            "target": {
-              "cell": "bcc266e8-c822-4f52-8d8b-ad48bf2c1d95",
-              "port": "328b00ba-8351-4979-b99c-8b8beb1d9fa7"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "sprawdzenie",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "sprawdzenie"
-            ],
-            "id": "1cfa25f6-e829-4b7a-aefa-5b00c981e280",
-            "source": {
-              "x": 363,
-              "y": 247
-            },
-            "target": {
-              "cell": "7ef99cfc-f1aa-4f17-82e1-9a88af418194",
-              "port": "bd03615f-0d97-4719-8b8b-59b33793a7fe"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "przechowywanie",
               "description": "",
               "outOfScope": false,
@@ -929,9 +899,55 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "sprawdzenie",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "sprawdzenie"
+            ],
+            "id": "1cfa25f6-e829-4b7a-aefa-5b00c981e280",
+            "source": {
+              "x": 363,
+              "y": 247
+            },
+            "target": {
+              "cell": "7ef99cfc-f1aa-4f17-82e1-9a88af418194",
+              "port": "bd03615f-0d97-4719-8b8b-59b33793a7fe"
+            }
+          },
+          {
             "position": {
-              "x": 963,
-              "y": 195
+              "x": 1383,
+              "y": 170
             },
             "size": {
               "width": 120,
@@ -1050,7 +1066,7 @@
           },
           {
             "position": {
-              "x": 793,
+              "x": 790,
               "y": 450
             },
             "size": {
@@ -1059,7 +1075,7 @@
             },
             "attrs": {
               "text": {
-                "text": "backend uczelni"
+                "text": "backend baza danych APD"
               },
               "body": {
                 "stroke": "#333333",
@@ -1155,7 +1171,7 @@
             "zIndex": 12,
             "data": {
               "type": "tm.Process",
-              "name": "backend uczelni",
+              "name": "backend baza danych APD",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
